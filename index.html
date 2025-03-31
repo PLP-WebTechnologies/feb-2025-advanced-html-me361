@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week two Webdev Assignment</title>
+
+</head>
+<body>
+  <!-- 1. step one Ordered list-->
+  <h2>Ordered List</h2>
+  <ol type="I">
+    <li>First item</li>
+    <li>Second item</li>
+    <li>Third item</li>
+  </ol>
+  
+  <!-- 2. Add an external image from pexels.com-->
+  <h2>External Image</h2>
+  <a href="https://images.pexels.com/photos/270404/pexels-photo-270404.jpeg" target="_blank">
+    <img src="https://images.pexels.com/photos/270404/pexels-photo-270404.jpeg" alt="html codes pic" width="400">
+    <br>
+  </a>
+  
+
+  <!---3. Add a table of 5 contacts with; name, address, mobile and emails -->
+  <h2>Contact List</h2>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Mobile</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+       <td>Jake Donald</td>
+       <td>398 Main St,Hooville</td> 
+       <td>(+133) 456-709890</td> 
+       <td>JakeDonald0005@example.com</td>
+      </tr>
+      <tr>
+        <td>John Doe</td>
+        <td>123 Main St,Cityville</td> 
+        <td>(+123) 456-7890</td> 
+        <td>JohnDoe0001@example.com</td>
+       </tr>
+       <tr>
+        <td>Joe Kenn</td>
+        <td>456 Main St,Cityville</td> 
+        <td>(+456) 89056-7890</td> 
+        <td>JoeKenn0002@example.com</td>
+       </tr>
+       <tr>
+        <td>James Njoro</td>
+        <td>789 Main St,Ongataville</td> 
+        <td>(+678) 45676-7890</td> 
+        <td>JamesNjoro0003@example.com</td>
+       </tr>
+       <tr>
+        <td>Isaaq Mwaura</td>
+        <td>R18 Main St,Kajiado</td> 
+        <td>(+254) 798 477973</td> 
+        <td>Isaaq0004@example.com</td>
+       </tr>
+    </tbody>
+  </table>
+ 
+
+  <!-- 4. Add a registration form with name, email, date field and message fields -->
+   <h2>Registration Form</h2>
+
+    <form action="submit_form.php" method="POST">
+        <!-- Name Field -->
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        <br><br>
+
+        <!-- Email Field -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br><br>
+
+        <!-- Password Field -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="6">
+        <br><br>
+
+        <!-- Date of Birth Field -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        <br><br>
+
+        <!-- Dropdown -->
+        <label for="country">Select Country:</label>
+        <select id="country" name="country" required>
+            <option value="">--Select--</option>
+            <option value="Uganda">USA</option>
+            <option value="Egypt">UK</option>
+            <option value="Tanzania">Canada</option>
+            <option value="Kenya">Other</option>
+            <option value="china">Australia</option>
+            <option value="southAfrica">India</option>
+        </select>
+        <br><br>
+
+        <!-- Radio Buttons -->
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label>
+        
+        <input type="radio" id="other" name="gender" value="other" required>
+        <label for="other">Other</label>
+        <br><br>
+
+        <!-- Checkboxes -->
+        <label>Interests:</label>
+        <input type="checkbox" id="coding" name="interests" value="coding">
+        <label for="coding">Coding</label>
+
+        <input type="checkbox" id="sports" name="interests" value="sports">
+        <label for="sports">Sports</label>
+
+        <input type="checkbox" id="music" name="interests" value="music">
+        <label for="music">Music</label>
+        <br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Register</button>
+    </form>
+
+</body>
+</html>
